@@ -1,0 +1,18 @@
+.model example .blif
+.inputs X1 X2 X3 k
+.outputs F1 F2
+.names X1 X2 AND1
+11 1
+.names X3 NX3
+0 1
+.names X2 X3 AND2
+11 1
+.names AND2 NX3 AND3
+11 1
+.names AND2 key F1
+-1 1
+1- 1
+.names X3 AND2 F2
+01 1
+10 1
+.end
